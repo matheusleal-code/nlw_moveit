@@ -1,0 +1,97 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+}
+
+.container{
+    background: var(--blue) ;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    color: var(--white);
+}
+
+.containerGrid{
+    margin-left: -4rem;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.containerGrid .backgroundLogin{
+    margin: 4rem 0;
+}
+
+.containerGrid .backgroundLogin img{
+    height: 100%;
+}
+
+.container .loginPage{
+    margin: 4rem 0 4rem 6rem;
+    
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+.container .loginPage #logo {
+   margin: 10rem 0 6rem 0;
+   width: max-content;
+}
+
+.container .loginPage .info{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 40%;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+.info img{
+    margin-right: 1rem;
+}
+
+
+.container .loginPage .inputLogin{
+    margin: 4rem 0;
+    width: 40%;
+    display: flex;
+}
+
+.inputLogin button{
+    border: none;
+    background: var(--blue);
+    font-size: 0;
+}
+
+.inputLogin input{
+    width: 100%;
+    background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding: 1rem;
+    color: var(--white);
+}
+
+.inputLogin input:focus{
+    outline: none;
+}
+
+
+.inputLogin input::placeholder{
+    font-weight: lighter;
+    color: var(--white);
+    opacity: 0.6;
+}

@@ -4,13 +4,13 @@ import styles from '../styles/components/Profile.module.css'
 
 export function Profile() {
 
-    const {level} = useContext(ChallengesContext)
+    const {level, username} = useContext(ChallengesContext)
 
     return (
         <div className={styles.profileContainer}>
-            <img src="https://github.com/matheusleal-code.png" alt="Matheus Leal" />
+            <img src={`https://github.com/${username}.png`} alt="Matheus Leal" />
             <div>
-                <strong>Matheus Leal</strong>
+                <strong>{username}</strong>
                 <p>
                     <img src="icons/level.svg" alt="" />
                     Level {level}
